@@ -154,5 +154,37 @@ Server runs on http://localhost:5000
 
 
 
+---
+
+### 🔄 2. **MongoDB Relationship Mermaid Diagram**
+
+```markdown
+## 🛠 MongoDB Entity Relationships 
+
+    USERS {
+        ObjectId _id
+        String name
+        String email
+        String password
+        Date createdAt
+    }
+
+    BOOKS {
+        ObjectId _id
+        String title
+        String author
+        String genre
+        Date published
+        Date createdAt
+    }
+
+    REVIEWS {
+        ObjectId _id
+        Number rating
+        String comment
+        ObjectId userId
+        ObjectId bookId
+        Date createdAt
+    }
 
 
